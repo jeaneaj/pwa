@@ -1,0 +1,18 @@
+{
+  "name": "training-2018-b",
+  "short_name": "training-2018-b",
+  "start_url": "https://www.merlinspotions.com?homescreen=1",
+  "background_color": "#fff",
+  "theme_color":" #4e439b",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "https://cdn.mobify.com/sites/training-2018-b/production/static/img/global/app-icon.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://cdn.mobify.com/sites/training-2018-b/production/static/img/global/app-icon-512.png",
+      "sizes": "512x512"
+    }
+  ]
+}
