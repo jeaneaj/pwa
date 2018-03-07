@@ -4,10 +4,11 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
+
 import * as ReduxForm from 'redux-form'
 import {connect} from 'react-redux'
 import {createPropsSelector} from 'reselect-immutable-helpers'
-import classNames from 'classnames'
 import {PAYMENT_EXISTING_CARD, PAYMENT_NEW_CARD, AMEX_CARD, DEFAULT_CARD, NUMBER_FIELD} from '../constants'
 
 // Selectors
@@ -113,6 +114,10 @@ class CreditCardForm extends React.Component {
             </div>
         )
 
+        const selectCreditCardClasses = classNames({
+            'u-text-weight-medium': isNewCardInputSelected
+        })
+
         return (
             <div>
                 <div className="t-checkout-payment__title u-padding-top-lg u-padding-bottom-md">
@@ -151,7 +156,7 @@ class CreditCardForm extends React.Component {
                                     component={Field}
                                     name="selectCreditCard"
                                     label={
-                                        <span className={isNewCardInputSelected && 'u-text-weight-medium'}>
+                                        <span className={selectCreditCardClasses}>
                                             {formatMessage(context, {id: 'checkoutPayment.form.label.newCard'})}
                                         </span>
                                     }

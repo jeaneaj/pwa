@@ -4,6 +4,8 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
+
 import {connect} from 'react-redux'
 import * as ReduxForm from 'redux-form'
 import {createPropsSelector} from 'reselect-immutable-helpers'
@@ -18,6 +20,9 @@ const variationSwatch = ({input: {value, onChange}, values, label, error, name, 
         onChange(value = val)
         onVariationChange()
     }
+    const swatchClasses = classNames({
+        'pw-swatch__error': error && !value
+    })
 
     return (
         <div>
@@ -25,7 +30,7 @@ const variationSwatch = ({input: {value, onChange}, values, label, error, name, 
                 label={label}
                 onChange={handleChange}
                 value={value}
-                className={error && !value ? 'pw-swatch__error' : ''}
+                className={swatchClasses}
             >
                 {values.map(({label, value}) =>
                     <SwatchItem key={value}
@@ -53,22 +58,28 @@ variationSwatch.propTypes = {
     values: PropTypes.array
 }
 
-const ProductDetailsVariations = ({variations, error, onVariationChange}) => (
-    <div className={variations.length > 0 && 'u-margin-top-lg u-padding-start-md u-padding-end-md'}>
-        {variations.map(({id, name, label, values = []}) => (
-            <FieldRow key={id} error={error}>
-                <ReduxForm.Field
-                    label={label}
-                    name={name}
-                    values={values}
-                    error={error}
-                    component={variationSwatch}
-                    onVariationChange={onVariationChange}
-                />
-            </FieldRow>
-        ))}
-    </div>
-)
+const ProductDetailsVariations = ({variations, error, onVariationChange}) => {
+    const classes = classNames({
+        'u-margin-top-lg u-padding-start-md u-padding-end-md': variations.length > 0
+    })
+
+    return (
+        <div className={classes}>
+            {variations.map(({id, name, label, values = []}) => (
+                <FieldRow key={id} error={error}>
+                    <ReduxForm.Field
+                        label={label}
+                        name={name}
+                        values={values}
+                        error={error}
+                        component={variationSwatch}
+                        onVariationChange={onVariationChange}
+                    />
+                </FieldRow>
+            ))}
+        </div>
+    )
+}
 
 ProductDetailsVariations.propTypes = {
     error: PropTypes.object,

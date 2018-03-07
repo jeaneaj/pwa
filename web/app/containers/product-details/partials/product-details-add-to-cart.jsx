@@ -4,6 +4,8 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
+
 import {connect} from 'react-redux'
 import * as ReduxForm from 'redux-form'
 import {createPropsSelector} from 'reselect-immutable-helpers'
@@ -68,6 +70,9 @@ const ProductDetailsAddToCart = ({
         onIncreaseClick: increaseQuantity,
     }
 
+    const classes = classNames('t-product-details__indicator u-border u-padding-md u-flex u-flexbox u-justify-center', {
+        'u-margin-start': available
+    })
     return (
         <form id={ADD_TO_CART_FORM_NAME} data-analytics-name={UI_NAME.addToCart} onSubmit={handleSubmit(onSubmit)}>
             <ProductDetailsVariations error={error} />
@@ -80,7 +85,7 @@ const ProductDetailsAddToCart = ({
                         <Stepper {...stepperProps} />
                     }
 
-                    <div className={`t-product-details__indicator u-border ${available ? 'u-margin-start' : ''} u-padding-md  u-flex u-flexbox u-justify-center`}>
+                    <div className={classes}>
                         <Icon name={available ? 'check' : 'close'} className="u-margin-end-sm" />
                         {available ? 'In stock' : 'Out of stock'}
                     </div>

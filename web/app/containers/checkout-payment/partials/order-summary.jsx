@@ -4,6 +4,8 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
+
 import {connect} from 'react-redux'
 import {createPropsSelector} from 'reselect-immutable-helpers'
 import {getAssetUrl} from 'progressive-web-sdk/dist/asset-utils'
@@ -158,6 +160,10 @@ class OrderSummary extends React.Component {
         const outputTaxAmount = formatNumber(context, taxAmount, currencyOptions)
         const outputOrderTotal = formatNumber(context, orderTotal, currencyOptions)
 
+        const fixedPlaceOrderClasses = classNames('t-checkout-payment__fixed-place-order', {
+            't--show': isFixedPlaceOrderShown
+        })
+
         return (
             <div className="t-checkout-payment__order-summary">
                 <div className="t-checkout-payment__title u-padding-top-lg u-padding-bottom-md">
@@ -231,7 +237,7 @@ class OrderSummary extends React.Component {
 
                     {/* This is the FIXED positioned "Place Your Order" container */}
                     <div
-                        className={`t-checkout-payment__fixed-place-order ${isFixedPlaceOrderShown && 't--show'}`}
+                        className={fixedPlaceOrderClasses}
                         tabIndex="-1"
                         aria-hidden="true"
                     >

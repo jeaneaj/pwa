@@ -4,6 +4,8 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
+
 import {connect} from 'react-redux'
 import {createPropsSelector} from 'reselect-immutable-helpers'
 import {getSelectedCurrency} from 'progressive-web-sdk/dist/store/app/selectors'
@@ -44,6 +46,10 @@ const PaymentProductItem = ({
     const priceValue = price * quantity
     const discount = linePriceValue < priceValue
 
+    const labelClasses = classNames({
+        'u-margin-top-sm': options > 0
+    })
+
     return (
         <ProductItem customWidth="20%"
             className="u-padding-top-lg u-padding-bottom-lg u-padding-start u-padding-end"
@@ -52,16 +58,22 @@ const PaymentProductItem = ({
         >
             <div className="u-flexbox u-align-bottom">
                 <div className="u-flex-none u-color-neutral-50 u-text-size-small">
-                    {options && options.map(({label, value}, idx) => (
-                        <p
-                            className={idx > 0 ? 'u-margin-top-sm' : ''}
-                            key={`${id}-option-${idx}`}
-                        >
-                            {label}: {value}
-                        </p>
-                    ))}
+                    {options && options.map(({label, value}, idx) => {
+                        const classes = classNames({
+                            'u-margin-top-sm': idx > 0
+                        })
 
-                    <p className={options > 0 ? 'u-margin-top-sm' : ''}>
+                        return (
+                            <p
+                                className={classes}
+                                key={`${id}-option-${idx}`}
+                            >
+                                {label}: {value}
+                            </p>
+                        )
+                    })}
+
+                    <p className={labelClasses}>
                         <FormattedText messageId="checkoutPayment.product.quantity" />: {quantity}
                     </p>
                 </div>

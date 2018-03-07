@@ -21,7 +21,7 @@ const parseProduct = ($, $product) => {
     const available = $stock.hasClass('available')
 
     const priceMatch = $price.text().match(/\$(.+)/)
-    const price = priceMatch ? $price.text().match(/\$(.+)/)[1] : undefined
+    const price = priceMatch ? $price.text().match(/\$(.+)/)[1] : ''
 
     const link = $link.attr('href')
 
