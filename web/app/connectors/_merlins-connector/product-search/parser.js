@@ -2,7 +2,7 @@
 /* Copyright (c) 2018 Mobify Research & Development Inc. All rights reserved. */
 /* * *  *  * *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * */
 
-// import queryString from 'query-string'
+import queryString from 'query-string'
 
 // This regex is used to get a product's ID from its "Wishlist" or "Compare"
 // button. It's stored in a string in a data attribute of the button.
@@ -77,84 +77,84 @@ const parseSelectedSortingOptions = ($, $content) => {
     return selected
 }
 
-// const parseFilter = ($, $option, currentUrl) => {
-//     const label = $option.find('.filter-options-title').text()
-//     let ruleset = ''
+const parseFilter = ($, $option, currentUrl) => {
+    const label = $option.find('.filter-options-title').text()
+    let ruleset = ''
 
-//     const $kinds = $option.find('.filter-options-content a')
-//     const kinds = $.map($kinds, (el) => {
-//         const $kind = $(el)
-//         const $count = $kind.find('.count')
-//         $count.remove()
+    const $kinds = $option.find('.filter-options-content a')
+    const kinds = $.map($kinds, (el) => {
+        const $kind = $(el)
+        const $count = $kind.find('.count')
+        $count.remove()
 
-//         const filterQueryObj = queryString.parse($kind[0].search)
-//         const currentQueryObj = queryString.parse(currentUrl.split('?')[1])
+        const filterQueryObj = queryString.parse($kind[0].search)
+        const currentQueryObj = queryString.parse(currentUrl.split('?')[1])
 
-//         // Get the filter rule based on what options are in the filters (link) search
-//         // and those in the current url. The key value pair that is missing, is the
-//         // filter this item represents.
-//         ruleset =
-//             Object.keys(filterQueryObj)
-//                 .filter((key) => !Object.keys(currentQueryObj).includes(key))[0]
+        // Get the filter rule based on what options are in the filters (link) search
+        // and those in the current url. The key value pair that is missing, is the
+        // filter this item represents.
+        ruleset =
+            Object.keys(filterQueryObj)
+                .filter((key) => !Object.keys(currentQueryObj).includes(key))[0]
 
-//         return {
-//             label: $kind.text(),
-//             count: parseInt($count[0].childNodes[0].nodeValue),
-//             searchKey: filterQueryObj[ruleset],
-//             query: filterQueryObj[ruleset]
-//         }
-//     })
+        return {
+            label: $kind.text(),
+            count: parseInt($count[0].childNodes[0].nodeValue),
+            searchKey: filterQueryObj[ruleset],
+            query: filterQueryObj[ruleset]
+        }
+    })
 
-//     return {
-//         label,
-//         ruleset,
-//         kinds
-//     }
-// }
+    return {
+        label,
+        ruleset,
+        kinds
+    }
+}
 
-// const parseFilters = ($, $content, currentUrl) => {
-//     const $options = $content.find('.filter-options-item')
-//     const options = $.map($options, (el) => parseFilter($, $(el), currentUrl))
+const parseFilters = ($, $content, currentUrl) => {
+    const $options = $content.find('.filter-options-item')
+    const options = $.map($options, (el) => parseFilter($, $(el), currentUrl))
 
-//     return options
-// }
-// import urlParse from 'url-parse'
-// const parseSelectedFilters = ($, $content, currentUrl) => {
-//     const filters = []
+    return options
+}
+import urlParse from 'url-parse'
+const parseSelectedFilters = ($, $content, currentUrl) => {
+    const filters = []
 
-//     // Parse selected filters by getting the current filters applied to this page,
-//     // then removeing all the filters that appear in the "remove" x filter link.
-//     // What will be left is the key/value pair of the filter representing the selected
-//     // filter.
-//     const urlObj = urlParse(currentUrl)
-//     const queryObj = queryString.parse(urlObj.query)
-//     Object.keys(queryObj)
-//         .forEach((key) => {
-//             const value = queryObj[key]
-//             const queryObjClone = {...queryObj}
+    // Parse selected filters by getting the current filters applied to this page,
+    // then removeing all the filters that appear in the "remove" x filter link.
+    // What will be left is the key/value pair of the filter representing the selected
+    // filter.
+    const urlObj = urlParse(currentUrl)
+    const queryObj = queryString.parse(urlObj.query)
+    Object.keys(queryObj)
+        .forEach((key) => {
+            const value = queryObj[key]
+            const queryObjClone = {...queryObj}
 
-//             delete queryObjClone[key]
+            delete queryObjClone[key]
 
-//             // Look for the selected filter el to get the label and text
-//             const $selectedFilter = $content.find(`.filter-current a[href$="${queryString.stringify(queryObjClone)}"]`).closest('.item')
+            // Look for the selected filter el to get the label and text
+            const $selectedFilter = $content.find(`.filter-current a[href$="${queryString.stringify(queryObjClone)}"]`).closest('.item')
 
-//             if (!$selectedFilter.length) { return }
+            if (!$selectedFilter.length) { return }
 
-//             filters.push({
-//                 label: $selectedFilter.find('.filter-value').text(),
-//                 query: `${key}=${value}`,
-//                 ruleset: $selectedFilter.find('.filter-label').text()
-//             })
-//         })
+            filters.push({
+                label: $selectedFilter.find('.filter-value').text(),
+                query: `${key}=${value}`,
+                ruleset: $selectedFilter.find('.filter-label').text()
+            })
+        })
 
-//     filters.push({
-//         label: 'Books',
-//         query: `cgid=${'books'}`,
-//         ruleset: 'Category'
-//     })
+    filters.push({
+        label: 'Books',
+        query: `cgid=${'books'}`,
+        ruleset: 'Category'
+    })
 
-//     return filters
-// }
+    return filters
+}
 
 export const parseProductSearch = ($, $html) => { // eslint-disable-line no-unused-vars
     const $mainContent = $html.find('#maincontent')
@@ -168,17 +168,17 @@ export const parseProductSearch = ($, $html) => { // eslint-disable-line no-unus
         }
     }
 
-    // const currentUrl =
-    //     JSON.parse($mainContent.find('.toolbar-products:first').attr('data-mage-init'))
-    //         .productListToolbarForm
-    //         .url
+    const currentUrl =
+        JSON.parse($mainContent.find('.toolbar-products:first').attr('data-mage-init'))
+            .productListToolbarForm
+            .url
 
     const products = parseProducts($, $mainContent)
 
     const sortingOptions = parseSortingOptions($, $mainContent)
     const selectedSortingOption = parseSelectedSortingOptions($, $mainContent)
-    // const filters = parseFilters($, $mainContent, currentUrl)
-    // const selectedFilters = parseSelectedFilters($, $mainContent, currentUrl)
+    const filters = parseFilters($, $mainContent, currentUrl)
+    const selectedFilters = parseSelectedFilters($, $mainContent, currentUrl)
 
     const total = parseInt($mainContent.find('#toolbar-amount .toolbar-number:first').text())
     const count = products.length
@@ -196,7 +196,7 @@ export const parseProductSearch = ($, $html) => { // eslint-disable-line no-unus
         count,
         sortingOptions,
         selectedSortingOption,
-        // filters,
-        // selectedFilters
+        filters,
+        selectedFilters
     }
 }
