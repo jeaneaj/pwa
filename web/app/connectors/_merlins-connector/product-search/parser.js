@@ -168,17 +168,17 @@ export const parseProductSearch = ($, $html) => { // eslint-disable-line no-unus
         }
     }
 
-    const currentUrl =
-        JSON.parse($mainContent.find('.toolbar-products:first').attr('data-mage-init'))
-            .productListToolbarForm
-            .url
+    // const currentUrl =
+    //     JSON.parse($mainContent.find('.toolbar-products:first').attr('data-mage-init'))
+    //         .productListToolbarForm
+    //         .url
 
     const products = parseProducts($, $mainContent)
 
     const sortingOptions = parseSortingOptions($, $mainContent)
     const selectedSortingOption = parseSelectedSortingOptions($, $mainContent)
-    const filters = parseFilters($, $mainContent, currentUrl)
-    const selectedFilters = parseSelectedFilters($, $mainContent, currentUrl)
+    // const filters = parseFilters($, $mainContent, currentUrl)
+    // const selectedFilters = parseSelectedFilters($, $mainContent, currentUrl)
 
     const total = parseInt($mainContent.find('#toolbar-amount .toolbar-number:first').text())
     const count = products.length
@@ -196,7 +196,7 @@ export const parseProductSearch = ($, $html) => { // eslint-disable-line no-unus
         count,
         sortingOptions,
         selectedSortingOption,
-        filters,
-        selectedFilters
+        // filters,
+        // selectedFilters
     }
 }
