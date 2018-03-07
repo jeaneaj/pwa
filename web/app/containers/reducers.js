@@ -22,6 +22,7 @@ import home from './home/reducer'
 import login from './login/reducer'
 import productDetails from './product-details/reducer'
 import productList from './product-list/reducer'
+import startersKit from './starters-kit/reducer'
 import wishlist from './wishlist/reducer'
 
 
@@ -42,6 +43,7 @@ const uiReducer = combineReducers({
     login,
     productDetails,
     productList,
+    startersKit,
     wishlist,
 
 })
