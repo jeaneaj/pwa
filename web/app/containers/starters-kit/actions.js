@@ -20,5 +20,5 @@ export const initialize = (url) => (dispatch) => {
 
     // Finally call the product search, let the reducer and selectors do the
     // rest of the work.
-    return dispatch(IntegrationManager.productSearch.searchProducts(searchParams, {url}))
+    return dispatch(IntegrationManager.productSearch.searchProducts(searchParams))
 }

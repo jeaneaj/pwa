@@ -70,7 +70,7 @@ class Router extends React.Component {
                 <SDKRouter>
                     <Route path="/" component={App} onChange={OnChange}>
                         <IndexRoute component={Home} routeName="home" />
-                        <Route component={StartersKit} path="starters-kit" routeName="startersKit" />
+                        <Route component={StartersKit} path="starters-kit.html" routeName="startersKit" />
                         <Route component={Cart} path="checkout/cart/" routeName="cart" />
                         <Route component={Login} path="customer/account/login/" routeName="signin" />
                         <Route component={Login} path="customer/account/create/" routeName="register" />
