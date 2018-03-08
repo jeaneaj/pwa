@@ -13,9 +13,17 @@ import ProductDetailsCarousel from './partials/product-details-carousel'
 import ProductDetailsAddToCart from './partials/product-details-add-to-cart'
 import ProductDetailsDescription from './partials/product-details-description'
 
+import ListTile from 'mobify-amp-sdk/dist/components/list-tile'
+import Icon from 'mobify-amp-sdk/dist/components/icon' // import Icon component to use for startAction prop
+
 const ProductDetails = () => {
     return (
         <div className="t-product-details">
+            <ListTile className="u-margin-top u-padding-start-md u-padding-end-md" startAction={
+                <Icon name="store" title="Store" />
+            }>
+                Available in store!
+            </ListTile>
             <ProductDetailsHeading />
             <ProductDetailsCarousel />
             <ProductDetailsAddToCart />
