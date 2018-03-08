@@ -2,7 +2,7 @@
 /* Copyright (c) 2017 Mobify Research & Development Inc. All rights reserved. */
 /* * *  *  * *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * */
 
-import {mount, shallow} from 'enzyme'
+import {mount} from 'enzyme'
 /* eslint-env jest */
 import React from 'react'
 
