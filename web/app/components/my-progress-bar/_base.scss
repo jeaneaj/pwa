@@ -15,10 +15,10 @@
     // Root Class. Contains all core styles, typically for the component's
     // wrapper element.
 
+    position: relative;
     background-color: $neutral-40;
     width: 100%;
     height: $unit*4;
-    position: relative;
 }
 
 
@@ -34,13 +34,13 @@
 // ---
 //
 .c-my-progress-bar__visual-indicator {
-    background-color: $brand-color;
     height: 100%;
+    background-color: $brand-color;
 }
 
 .c-my-progress-bar__text-label {
-    color: $neutral-00;
     position: absolute;
+    color: $neutral-00;
     top: 50%;
     left: 0;
     margin-left: $unit*1;
