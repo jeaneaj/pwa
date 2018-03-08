@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "87C6A8851B43044D001876CE"
-               BuildableName = "training-2018-b.app"
-               BlueprintName = "training-2018-b"
-               ReferencedContainer = "container:training-2018-b.xcodeproj">
+               BuildableName = "pwa-training.app"
+               BlueprintName = "pwa-training"
+               ReferencedContainer = "container:pwa-training.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "87C6A89A1B43044D001876CE"
-               BuildableName = "training-2018-bTests.xctest"
-               BlueprintName = "training-2018-bTests"
-               ReferencedContainer = "container:training-2018-b.xcodeproj">
+               BuildableName = "pwa-trainingTests.xctest"
+               BlueprintName = "pwa-trainingTests"
+               ReferencedContainer = "container:pwa-training.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "87C6A89A1B43044D001876CE"
-               BuildableName = "training-2018-bTests.xctest"
-               BlueprintName = "training-2018-bTests"
-               ReferencedContainer = "container:training-2018-b.xcodeproj">
+               BuildableName = "pwa-trainingTests.xctest"
+               BlueprintName = "pwa-trainingTests"
+               ReferencedContainer = "container:pwa-training.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "87C6A8851B43044D001876CE"
-            BuildableName = "training-2018-b.app"
-            BlueprintName = "training-2018-b"
-            ReferencedContainer = "container:training-2018-b.xcodeproj">
+            BuildableName = "pwa-training.app"
+            BlueprintName = "pwa-training"
+            ReferencedContainer = "container:pwa-training.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "87C6A8851B43044D001876CE"
-            BuildableName = "training-2018-b.app"
-            BlueprintName = "training-2018-b"
-            ReferencedContainer = "container:training-2018-b.xcodeproj">
+            BuildableName = "pwa-training.app"
+            BlueprintName = "pwa-training"
+            ReferencedContainer = "container:pwa-training.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -99,9 +99,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "87C6A8851B43044D001876CE"
-            BuildableName = "training-2018-b.app"
-            BlueprintName = "training-2018-b"
-            ReferencedContainer = "container:training-2018-b.xcodeproj">
+            BuildableName = "pwa-training.app"
+            BlueprintName = "pwa-training"
+            ReferencedContainer = "container:pwa-training.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

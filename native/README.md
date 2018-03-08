@@ -18,10 +18,10 @@ Before you get started, take some time to look through [the Getting Started Guid
 
 ```sh
 # Clone the repo
-git clone git@github.com:mobify/platform-training-2018-b.git
-# or git clone https://github.com/mobify/platform-training-2018-b.git
+git clone git@github.com:mobify/platform-pwa-training.git
+# or git clone https://github.com/mobify/platform-pwa-training.git
 
-cd platform-training-2018-b/native
+cd platform-pwa-training/native
 
 # Install dependencies
 npm run deps
@@ -31,8 +31,8 @@ npm run deps
 
 ### iOS
 To run the app for iOS, follow these steps:
-- Open the `training-2018-b.xcworkspace` file in the `ios` folder.
-- Make sure you have the `training-2018-b` target selected.
+- Open the `pwa-training.xcworkspace` file in the `ios` folder.
+- Make sure you have the `pwa-training` target selected.
 - Build and run the app (<kbd>⌘**R**</kbd>)
 
 ### Android

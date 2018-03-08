@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:training-2018-b.xcodeproj">
+      location = "self:pwa-training.xcodeproj">
    </FileRef>
 </Workspace>

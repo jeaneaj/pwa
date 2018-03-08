@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  training-2018-b
+//  pwa-training
 //
 //  Created by Mike Klemarewski on 2015-06-30.
 //  Copyright (c) 2015 Mobify. All rights reserved.

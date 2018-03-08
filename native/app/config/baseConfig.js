@@ -13,7 +13,7 @@ const baseConfig = {
     baseURL: 'https://www.merlinspotions.com',
     previewBundle: AstroNative.Configuration.DEBUG
         ? localPreviewUrl
-        : '//cdn.mobify.com/sites/progressive-web-training-2018-b/production/loader.js',
+        : '//cdn.mobify.com/sites/progressive-web-pwa-training/production/loader.js',
     colors,
     logoUrl: 'file:///logo.png'
 }

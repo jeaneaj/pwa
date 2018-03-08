@@ -18,5 +18,5 @@ var target = (targetMatch && targetMatch[1]) || 'production'
 if (isPreview) {
     self.importScripts('https://localhost:8443/worker.js')
 } else {
-    self.importScripts('https://cdn.mobify.com/sites/training-2018-b/' + target + '/worker.js') // eslint-disable-line prefer-template
+    self.importScripts('https://cdn.mobify.com/sites/pwa-training/' + target + '/worker.js') // eslint-disable-line prefer-template
 }

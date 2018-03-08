@@ -29,7 +29,7 @@ const PushController = function(pushPlugin) {
 
 PushController.init = async function() {
     const pushSiteId = MESSAGING_SITE_ID    // replaced at build time
-    const mobifySlugName = 'progressive-web-training-2018-b'
+    const mobifySlugName = 'progressive-web-pwa-training'
 
     const engagementPromise = EngagementController.init(mobifySlugName, baseConfig.baseURL)
     const pushPlugin = await PushPlugin.init(pushSiteId, engagementPromise)

@@ -1,5 +1,5 @@
 {
-    "messagingSiteId": "training-2018-b",
+    "messagingSiteId": "pwa-training",
     "messagingEnabled": false,
     "dependencies": {
         "babel-runtime": "6.11.6",

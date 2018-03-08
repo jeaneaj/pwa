@@ -1,15 +1,15 @@
-site_id: training-2018-b
+site_id: pwa-training
 
 config:
-    mobify_property_id: training-2018-b
-    business_slug: training-2018-b
-    cloud_slug: training-2018-b
+    mobify_property_id: pwa-training
+    business_slug: pwa-training
+    cloud_slug: pwa-training
 
     # Human-readable site name
     friendly_site_name: www.merlinspotions.com
 
     # Must be a 192x192 icon file.
-    default_icon_url: https://cdn.mobify.com/sites/training-2018-b/production/static/img/global/app-icon.png
+    default_icon_url: https://cdn.mobify.com/sites/pwa-training/production/static/img/global/app-icon.png
 
     # Default is to use the URL for the target domain, via https
     default_url: https://www.merlinspotions.com

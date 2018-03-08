@@ -29,7 +29,7 @@
 			containerPortal = 87C6A87E1B43044D001876CE /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 87C6A8851B43044D001876CE;
-			remoteInfo = training-2018-b;
+			remoteInfo = pwa-training;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,18 +55,18 @@
 		5BFB5A531DD256FC00C3A22F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		87132A1E1B6016FF00FC74A4 /* Astro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Astro.framework; path = "$(CONFIGURATION_BUILD_DIR)/Astro.framework"; sourceTree = "<group>"; };
 		87132A1F1B6016FF00FC74A4 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = "$(CONFIGURATION_BUILD_DIR)/Cordova.framework"; sourceTree = "<group>"; };
-		87C6A8861B43044D001876CE /* training-2018-b.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = training-2018-b.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87C6A8861B43044D001876CE /* pwa-training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pwa-training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C6A88A1B43044D001876CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87C6A88B1B43044D001876CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C6A8921B43044D001876CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		87C6A89B1B43044D001876CE /* training-2018-bTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = training-2018-bTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87C6A89B1B43044D001876CE /* pwa-trainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pwa-trainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C6A8A01B43044D001876CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87C6A8A11B43044D001876CE /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
 		87C6A8D71B430E15001876CE /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
 		87C6A8F51B430EDD001876CE /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		87C6A8F71B430FA2001876CE /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = app.js; path = ../../app/app.js; sourceTree = "<group>"; };
 		87C6A8F91B430FB7001876CE /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = app.js; path = ../../app/build/app.js; sourceTree = "<group>"; };
-		CB4448E01D3011B900D31824 /* training-2018-b.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = training-2018-b.entitlements; sourceTree = "<group>"; };
+		CB4448E01D3011B900D31824 /* pwa-training.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pwa-training.entitlements; sourceTree = "<group>"; };
 		CBC6D60B1D19B7E900DC3785 /* PushClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushClient.framework; path = "$(CONFIGURATION_BUILD_DIR)/PushClient.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,8 +115,8 @@
 				2A398BB11E31406F00220ED4 /* app-www */,
 				3FACDAF31E3A6BA900556E22 /* Frameworks */,
 				87C6A8D61B430E15001876CE /* Cordova */,
-				87C6A8881B43044D001876CE /* training-2018-b */,
-				87C6A89E1B43044D001876CE /* training-2018-bTests */,
+				87C6A8881B43044D001876CE /* pwa-training */,
+				87C6A89E1B43044D001876CE /* pwa-trainingTests */,
 				87C6A8871B43044D001876CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,24 +124,24 @@
 		87C6A8871B43044D001876CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				87C6A8861B43044D001876CE /* training-2018-b.app */,
-				87C6A89B1B43044D001876CE /* training-2018-bTests.xctest */,
+				87C6A8861B43044D001876CE /* pwa-training.app */,
+				87C6A89B1B43044D001876CE /* pwa-trainingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		87C6A8881B43044D001876CE /* training-2018-b */ = {
+		87C6A8881B43044D001876CE /* pwa-training */ = {
 			isa = PBXGroup;
 			children = (
 				6E4715201CA1DAA500A359FE /* Plugins */,
 				87C6A8891B43044D001876CE /* Supporting Files */,
 				87C6A8F71B430FA2001876CE /* app.js */,
-				CB4448E01D3011B900D31824 /* training-2018-b.entitlements */,
+				CB4448E01D3011B900D31824 /* pwa-training.entitlements */,
 				87C6A88B1B43044D001876CE /* AppDelegate.swift */,
 				87C6A8921B43044D001876CE /* Images.xcassets */,
 				5BFB5A531DD256FC00C3A22F /* Launch Screen.storyboard */,
 			);
-			path = training-2018-b;
+			path = pwa-training;
 			sourceTree = "<group>";
 		};
 		87C6A8891B43044D001876CE /* Supporting Files */ = {
@@ -153,13 +153,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		87C6A89E1B43044D001876CE /* training-2018-bTests */ = {
+		87C6A89E1B43044D001876CE /* pwa-trainingTests */ = {
 			isa = PBXGroup;
 			children = (
 				87C6A8A11B43044D001876CE /* ProjectTests.swift */,
 				87C6A89F1B43044D001876CE /* Supporting Files */,
 			);
-			path = training-2018-bTests;
+			path = pwa-trainingTests;
 			sourceTree = "<group>";
 		};
 		87C6A89F1B43044D001876CE /* Supporting Files */ = {
@@ -190,9 +190,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		87C6A8851B43044D001876CE /* training-2018-b */ = {
+		87C6A8851B43044D001876CE /* pwa-training */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87C6A8A51B43044D001876CE /* Build configuration list for PBXNativeTarget "training-2018-b" */;
+			buildConfigurationList = 87C6A8A51B43044D001876CE /* Build configuration list for PBXNativeTarget "pwa-training" */;
 			buildPhases = (
 				87C6A8FB1B430FD2001876CE /* Build app.js */,
 				87C6A8821B43044D001876CE /* Sources */,
@@ -204,14 +204,14 @@
 			);
 			dependencies = (
 			);
-			name = training-2018-b;
-			productName = training-2018-b;
-			productReference = 87C6A8861B43044D001876CE /* training-2018-b.app */;
+			name = pwa-training;
+			productName = pwa-training;
+			productReference = 87C6A8861B43044D001876CE /* pwa-training.app */;
 			productType = "com.apple.product-type.application";
 		};
-		87C6A89A1B43044D001876CE /* training-2018-bTests */ = {
+		87C6A89A1B43044D001876CE /* pwa-trainingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87C6A8A81B43044D001876CE /* Build configuration list for PBXNativeTarget "training-2018-bTests" */;
+			buildConfigurationList = 87C6A8A81B43044D001876CE /* Build configuration list for PBXNativeTarget "pwa-trainingTests" */;
 			buildPhases = (
 				87C6A8971B43044D001876CE /* Sources */,
 				87C6A8981B43044D001876CE /* Frameworks */,
@@ -222,9 +222,9 @@
 			dependencies = (
 				87C6A89D1B43044D001876CE /* PBXTargetDependency */,
 			);
-			name = training-2018-bTests;
-			productName = training-2018-bTests;
-			productReference = 87C6A89B1B43044D001876CE /* training-2018-bTests.xctest */;
+			name = pwa-trainingTests;
+			productName = pwa-trainingTests;
+			productReference = 87C6A89B1B43044D001876CE /* pwa-trainingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -255,7 +255,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 87C6A8811B43044D001876CE /* Build configuration list for PBXProject "training-2018-b" */;
+			buildConfigurationList = 87C6A8811B43044D001876CE /* Build configuration list for PBXProject "pwa-training" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -268,8 +268,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				87C6A8851B43044D001876CE /* training-2018-b */,
-				87C6A89A1B43044D001876CE /* training-2018-bTests */,
+				87C6A8851B43044D001876CE /* pwa-training */,
+				87C6A89A1B43044D001876CE /* pwa-trainingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -336,7 +336,7 @@
 /* Begin PBXTargetDependency section */
 		87C6A89D1B43044D001876CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 87C6A8851B43044D001876CE /* training-2018-b */;
+			target = 87C6A8851B43044D001876CE /* pwa-training */;
 			targetProxy = 87C6A89C1B43044D001876CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -390,13 +390,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Preview";
 				BUNDLE_DISPLAY_NAME = "Merlin's";
-				CODE_SIGN_ENTITLEMENTS = training-2018-b/training-2018-b.entitlements;
+				CODE_SIGN_ENTITLEMENTS = pwa-training/pwa-training.entitlements;
 				DEVELOPMENT_TEAM = KS9S3B73SG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(CONFIGURATION_BUILD_DIR)",
 				);
-				INFOPLIST_FILE = training-2018-b/Info.plist;
+				INFOPLIST_FILE = pwa-training/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D RELEASE -D ASTRO_PREVIEW";
@@ -415,12 +415,12 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = training-2018-bTests/Info.plist;
+				INFOPLIST_FILE = pwa-trainingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.merlinspotions.progressive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/training-2018-b.app/training-2018-b";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pwa-training.app/pwa-training";
 			};
 			name = PreviewEnabledRelease;
 		};
@@ -521,13 +521,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Preview";
 				BUNDLE_DISPLAY_NAME = "Merlin's";
-				CODE_SIGN_ENTITLEMENTS = training-2018-b/training-2018-b.entitlements;
+				CODE_SIGN_ENTITLEMENTS = pwa-training/pwa-training.entitlements;
 				DEVELOPMENT_TEAM = KS9S3B73SG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(CONFIGURATION_BUILD_DIR)",
 				);
-				INFOPLIST_FILE = training-2018-b/Info.plist;
+				INFOPLIST_FILE = pwa-training/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG -D ASTRO_PREVIEW";
@@ -544,13 +544,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_DISPLAY_NAME = "Merlin's";
-				CODE_SIGN_ENTITLEMENTS = training-2018-b/training-2018-b.entitlements;
+				CODE_SIGN_ENTITLEMENTS = pwa-training/pwa-training.entitlements;
 				DEVELOPMENT_TEAM = KS9S3B73SG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(CONFIGURATION_BUILD_DIR)",
 				);
-				INFOPLIST_FILE = training-2018-b/Info.plist;
+				INFOPLIST_FILE = pwa-training/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.merlinspotions.progressive";
@@ -572,12 +572,12 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = training-2018-bTests/Info.plist;
+				INFOPLIST_FILE = pwa-trainingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.merlinspotions.progressive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/training-2018-b.app/training-2018-b";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pwa-training.app/pwa-training";
 			};
 			name = Debug;
 		};
@@ -589,19 +589,19 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = training-2018-bTests/Info.plist;
+				INFOPLIST_FILE = pwa-trainingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.merlinspotions.progressive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/training-2018-b.app/training-2018-b";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pwa-training.app/pwa-training";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		87C6A8811B43044D001876CE /* Build configuration list for PBXProject "training-2018-b" */ = {
+		87C6A8811B43044D001876CE /* Build configuration list for PBXProject "pwa-training" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87C6A8A31B43044D001876CE /* Debug */,
@@ -611,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87C6A8A51B43044D001876CE /* Build configuration list for PBXNativeTarget "training-2018-b" */ = {
+		87C6A8A51B43044D001876CE /* Build configuration list for PBXNativeTarget "pwa-training" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87C6A8A61B43044D001876CE /* Debug */,
@@ -621,7 +621,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87C6A8A81B43044D001876CE /* Build configuration list for PBXNativeTarget "training-2018-bTests" */ = {
+		87C6A8A81B43044D001876CE /* Build configuration list for PBXNativeTarget "pwa-trainingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87C6A8A91B43044D001876CE /* Debug */,
