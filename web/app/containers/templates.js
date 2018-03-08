@@ -56,3 +56,4 @@ export const AccountAddress = PWALoadable(() => import('./account-address/contai
 export const Wishlist = PWALoadable(() => import('./wishlist/container' /* webpackChunkName: "wishlist" */), 'wishlist')
 export const AccountViewOrder = PWALoadable(() => import('./account-view-order/container' /* webpackChunkName: "account-view-order" */), 'account-view-order')
 export const AccountOrderList = PWALoadable(() => import('./account-order-list/container' /* webpackChunkName: "account-order-list" */), 'account-order-list')
+export const StartersKit = PWALoadable(() => import('./starters-kit/container' /* webpackChunkName: "starters-kit" */), 'starters-kit')
