@@ -4,6 +4,7 @@
 
 import {createAction} from 'progressive-web-sdk/dist/utils/action-creation'
 import IntegrationManager from 'mobify-integration-manager/dist/'
+import {getCurrentProductId} from 'progressive-web-sdk/dist/store/products/selectors'
 
 // This is an example action which is used to trigger change in UI state
 export const toggleUIState = createAction('Toggle MyProductDetails UI state')
@@ -14,4 +15,17 @@ export const initialize = (url, routeName) => (dispatch) => {
     console.log('[MyProductDetails] initializing.  You can safely remove this log message.')
     // Ensure that your action return a Promise
     return dispatch(IntegrationManager.products.initProductDetailsPage(url, routeName))
+}
+
+export const handleAddToCart = () => (dispatch, getStore) => {
+    const productId = getCurrentProductId(getStore())
+    console.log(`Adding product with id ${productId}`)
+
+    return dispatch(IntegrationManager.cart.addToCart(productId, 1))
+        .then(() => {
+            console.log('Success! The product was added to the cart.')
+        })
+        .catch(() => {
+            console.error('Failure. The product was not added to the cart.')
+        })
 }
