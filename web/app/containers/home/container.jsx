@@ -10,6 +10,7 @@ import {createPropsSelector} from 'reselect-immutable-helpers'
 // Components
 import template from '../../template'
 import PageMeta from '../../components/page-meta'
+import MyProgressBar from '../../components/my-progress-bar'
 
 import {initialize} from './actions'
 
@@ -36,6 +37,7 @@ const Home = ({pageMeta, products}) => {
     return (
         <div className="t-home__container">
             <PageMeta {...pageMeta} />
+            <MyProgressBar percentageComplete={50} hasLabel={true} />
             <HomeCarousel banners={banners} />
             <HomeCategories />
             { products && <HomePopularProducts products={products} /> }
