@@ -18,6 +18,7 @@ import {
     CheckoutPayment,
     CheckoutShipping,
     Login,
+    MyLogin,
     ProductList,
     ProductDetails,
     Wishlist,
@@ -70,7 +71,7 @@ class Router extends React.Component {
                     <Route path="/" component={App} onChange={OnChange}>
                         <IndexRoute component={Home} routeName="home" />
                         <Route component={Cart} path="checkout/cart/" routeName="cart" />
-                        <Route component={Login} path="customer/account/login/" routeName="signin" />
+                        <Route component={MyLogin} path="customer/account/login/" routeName="signin" />
                         <Route component={Login} path="customer/account/create/" routeName="register" />
                         <Route component={AccountInfo} path="customer/account/edit/" routeName="accountInfo" />
                         <Route component={AccountDashboard} path="customer/account" routeName="account" />
