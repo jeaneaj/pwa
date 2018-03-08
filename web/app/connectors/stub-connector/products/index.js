@@ -18,23 +18,23 @@ export const initProductDetailsPage = (url, routeName) => (dispatch) => {
 
     const image = {
         src: '//via.placeholder.com/350x350',
-        alt: 'Product 1'
+        alt: 'My Product'
     }
 
     const exampleData = {
         [id]: {
-            price: '10.00',
+            price: '123.00',
             available: true,
             href: url,
             thumbnail: image,
-            title: 'Product 1',
+            title: 'My Product',
             images: [image, image],
             id: '1',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            description: 'This is my hard coded data.',
             pageMeta: {
-                title: 'Product 1',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                keywords: 'Product 1'
+                title: 'My Product',
+                description: 'This is my hard coded data.',
+                keywords: 'My Product'
             }
         }
     }
