@@ -8,9 +8,9 @@ import thunk from 'redux-thunk'
 import {fromJS} from 'immutable'
 
 // DO NOT USE! Merlins Connector is an example connector that is for demo only
-import {initConnector} from './connectors/merlins-connector'
+// import {initConnector} from './connectors/merlins-connector'
 // import {initConnector} from './connectors/sfcc-connector'
-// import {initConnector} from './connectors/stub-connector'
+import {initConnector} from './connectors/stub-connector'
 
 import {reducer as imReducer} from 'mobify-integration-manager/dist/integration-manager/reducer'
 import {CURRENT_URL} from 'progressive-web-sdk/dist/store/app/constants'

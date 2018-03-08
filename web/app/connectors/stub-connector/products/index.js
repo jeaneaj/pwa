@@ -23,7 +23,7 @@ export const initProductDetailsPage = (url, routeName) => (dispatch) => {
 
     const exampleData = {
         [id]: {
-            price: '10.00',
+            price: '$10.00',
             available: true,
             href: url,
             thumbnail: image,
@@ -31,6 +31,7 @@ export const initProductDetailsPage = (url, routeName) => (dispatch) => {
             images: [image, image],
             id: '1',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            rating: '4',
             pageMeta: {
                 title: 'Product 1',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',

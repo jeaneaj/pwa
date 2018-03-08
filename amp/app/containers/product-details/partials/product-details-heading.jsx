@@ -17,7 +17,7 @@ import {canonicalURL} from '../../../utils'
 import * as selectors from '../../../../../web/app/containers/product-details/selectors'
 import {getProductTitle, getProductPrice, getProductAvailability} from 'progressive-web-sdk/dist/store/products/selectors'
 
-const ProductDetailsHeading = ({available, breadcrumbs, title, price}) => {
+const ProductDetailsHeading = ({available, breadcrumbs, price, rating, title}) => {
     // Fix breadcrumbs href data
     const categoryBreadcrumbsItems = breadcrumbs.map((entry) => {
         entry.href = canonicalURL(entry.href)
@@ -34,6 +34,9 @@ const ProductDetailsHeading = ({available, breadcrumbs, title, price}) => {
             {(available && price) &&
                 <span className="t-product-details-heading__price t-product-details__price u-color-accent u-text-weight-regular u-text-family-header u-text-letter-spacing-small">{price}</span>
             }
+            {rating &&
+                <span className="u-text-weight-regular u-text-family-header u-text-size-small u-text-letter-spacing-small">{rating}/5</span>
+            }
         </div>
     )
 }
@@ -42,14 +45,16 @@ ProductDetailsHeading.propTypes = {
     available: PropTypes.bool,
     breadcrumbs: PropTypes.array,
     price: PropTypes.string,
+    rating: PropTypes.string,
     title: PropTypes.string
 }
 
 const mapStateToProps = createPropsSelector({
     available: getProductAvailability,
     breadcrumbs: selectors.getProductDetailsBreadcrumbs,
+    price: getProductPrice,
+    rating: selectors.getRating,
     title: getProductTitle,
-    price: getProductPrice
 })
 
 export default connect(mapStateToProps)(ProductDetailsHeading)
