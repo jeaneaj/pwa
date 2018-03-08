@@ -18,6 +18,7 @@ import {
     CheckoutPayment,
     CheckoutShipping,
     Login,
+    MyProductDetails,
     ProductList,
     ProductDetails,
     Wishlist,
@@ -85,9 +86,9 @@ class Router extends React.Component {
                         <Route component={ProductList} path="catalogsearch/result/" routeName="searchResultPage" />
                         <Route component={ProductList} path="Search-Show" routeName="searchResultPage" />
                         {/* Careful. The routeName on this 'configure' route is used to change how the ProductDetails component renders */}
-                        <Route component={ProductDetails} path="checkout/cart/configure/id/*/product_id/*/" routeName="cartEditPage" />
-                        <Route component={ProductDetails} path="wishlist/index/configure/id/*/product_id/*/" routeName="wishlistEditPage" />
-                        <Route component={ProductDetails} path="*.html" routeName="productDetailsPage" />
+                        <Route component={MyProductDetails} path="checkout/cart/configure/id/*/product_id/*/" routeName="cartEditPage" />
+                        <Route component={MyProductDetails} path="wishlist/index/configure/id/*/product_id/*/" routeName="wishlistEditPage" />
+                        <Route component={MyProductDetails} path="*.html" routeName="productDetailsPage" />
                         <Route component={Wishlist} path="wishlist/" routeName="wishlist" />
                         <Route component={AccountViewOrder} path="*/order/view/order_id/*/" routeName="accountViewOrder" />
                         <Route
