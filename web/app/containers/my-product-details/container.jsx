@@ -8,7 +8,6 @@ import {connect} from 'react-redux'
 import {createPropsSelector} from 'reselect-immutable-helpers'
 
 import template from '../../template'
-import {getTitle} from './selectors'
 import {getProductTitle, getProductAvailability, getProductPrice, getProductDescription} from 'progressive-web-sdk/dist/store/products/selectors'
 import {initialize} from './actions'
 
