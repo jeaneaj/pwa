@@ -1,5 +1,5 @@
 /* * *  *  * *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * */
-/* Copyright (c) 2017 Mobify Research & Development Inc. All rights reserved. */
+/* Copyright (c) 2018 Mobify Research & Development Inc. All rights reserved. */
 /* * *  *  * *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * */
 
 // This script will run before your project bundle is loaded

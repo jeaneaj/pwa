@@ -1,5 +1,5 @@
 /* * *  *  * *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * */
-/* Copyright (c) 2017 Mobify Research & Development Inc. All rights reserved. */
+/* Copyright (c) 2018 Mobify Research & Development Inc. All rights reserved. */
 /* * *  *  * *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * */
 import {isLocalStorageAvailable, loadScriptAsPromise} from 'progressive-web-sdk/dist/utils/utils'
 import {getBuildOrigin} from 'progressive-web-sdk/dist/asset-utils'
